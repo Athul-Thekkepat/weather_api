@@ -21,3 +21,20 @@ def lambda_handler(event, context):
             "statusCode": 400,
             "body": json.dumps(data)
         }
+    
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table('WeatherData')
+
+    item = {
+        "city": city,
+        "time": datetime.now().isoformat(),
+        "temperature": str(data["main"]["temp"]),
+        "description": data["weather"][0]["description"]
+    }
+
+    table.put_item(Item=item)
+
+    return {
+        "statusCode": 200,
+        "body": json.dumps(item)
+    }
