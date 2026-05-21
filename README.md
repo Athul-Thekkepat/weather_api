@@ -51,3 +51,9 @@ API → EventBridge → Lambda (Ingestion) → DynamoDB → Lambda (Processing) 
 git clone https://github.com/Athul-Thekkepat/aws-snowflake-data-pipeline.git
 
 cd aws-snowflake-data-pipeline
+
+### Install dependencies
+
+pip install -r requirements.txt
+
+---
