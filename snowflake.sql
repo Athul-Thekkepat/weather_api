@@ -19,3 +19,10 @@ FROM @my_s3_stage
 FILE_FORMAT = (TYPE = 'JSON');
 
 SELECT * FROM WEATHER_DATA;
+
+SELECT 
+    data:city::String as city,
+    data:temperature::FLOAT as temp,
+    data:description::String as description,
+    data:time::TIMESTAMP AS report_time
+FROM WEATHER_DATA;
