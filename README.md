@@ -82,3 +82,12 @@ Use environment variables or configuration files to manage secrets securely.
 * Built event-driven and scalable data workflows
 
 ---
+
+## 📌 Future Improvements
+
+* Add data validation and error handling
+* Implement monitoring using CloudWatch
+* Automate deployment using Infrastructure as Code (Terraform/CloudFormation)
+* Add dashboard/visualization layer
+
+---
