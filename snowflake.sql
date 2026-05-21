@@ -39,3 +39,5 @@ from @my_s3_stage
 file_format = (TYPE='JSON');
 
 ALTER PIPE my_pipe REFRESH;
+
+LIST @my_s3_stage;
