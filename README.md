@@ -32,3 +32,13 @@ API → EventBridge → Lambda (Ingestion) → DynamoDB → Lambda (Processing) 
 * requests (HTTP library for API calls)
 
 ---
+
+## 🚀 How It Works
+
+1. AWS Lambda fetches JSON data from an external API using the requests library.
+2. The data is uploaded to an S3 bucket.
+3. S3 triggers an event that sends a message to SQS.
+4. Snowpipe reads new data from the S3 stage.
+5. Data is loaded into Snowflake tables for analysis.
+
+---
