@@ -30,3 +30,10 @@ SELECT * FROM TABLE(INFORMATION_SCHEMA.COPY_HISTORY(
     TABLE_NAME=>'WEATHER_DATA',
     START_TIME=>DATEADD(HOURS,-1,CURRENT_TIMESTAMP())
 ));
+
+create or replace pipe my_pipe
+AUTO_INGEST = False
+as
+copy into weather_data
+from @my_s3_stage
+file_format = (TYPE='JSON');
