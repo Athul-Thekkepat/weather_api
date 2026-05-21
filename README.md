@@ -64,3 +64,12 @@ Sensitive information such as AWS credentials and Snowflake login details are no
 Use environment variables or configuration files to manage secrets securely.
 
 ---
+
+## 📊 Key Features
+
+* Serverless architecture (no infrastructure management)
+* Automated data ingestion pipeline
+* Event-driven processing using SQS
+* Scalable and efficient data loading using Snowpipe
+
+---
