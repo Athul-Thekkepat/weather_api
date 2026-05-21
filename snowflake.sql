@@ -37,3 +37,5 @@ as
 copy into weather_data
 from @my_s3_stage
 file_format = (TYPE='JSON');
+
+ALTER PIPE my_pipe REFRESH;
