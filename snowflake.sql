@@ -13,3 +13,7 @@ Credentials = (
 );
 
 LIST @my_s3_stage;
+
+COPY INTO WEATHER_DATA
+FROM @my_s3_stage
+FILE_FORMAT = (TYPE = 'JSON');
