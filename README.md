@@ -42,3 +42,12 @@ API → EventBridge → Lambda (Ingestion) → DynamoDB → Lambda (Processing) 
 5. Data is loaded into Snowflake tables for analysis.
 
 ---
+
+
+## 🛠️ Setup Instructions
+
+### Clone the repository
+
+git clone https://github.com/Athul-Thekkepat/aws-snowflake-data-pipeline.git
+
+cd aws-snowflake-data-pipeline
