@@ -43,3 +43,10 @@ ALTER PIPE my_pipe REFRESH;
 LIST @my_s3_stage;
 
 SELECT DATA FROM WEATHER_DATA LIMIT 2;
+
+SELECT 
+    data:city::String as city,
+    data:temperature::FLOAT as temp,
+    data:description::String as description,
+    data:time::TIMESTAMP AS report_time
+FROM WEATHER_DATA;
