@@ -57,3 +57,10 @@ cd aws-snowflake-data-pipeline
 pip install -r requirements.txt
 
 ---
+
+## 🔐 Security Note
+
+Sensitive information such as AWS credentials and Snowflake login details are not included in this repository.
+Use environment variables or configuration files to manage secrets securely.
+
+---
