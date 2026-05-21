@@ -21,3 +21,14 @@ API → EventBridge → Lambda (Ingestion) → DynamoDB → Lambda (Processing) 
 7. Data is automatically loaded into Snowflake tables for analysis.
 
 ---
+
+## ⚙️ Technologies Used
+
+* Python
+* AWS Lambda
+* Amazon S3
+* Snowflake
+* boto3 (AWS SDK for Python)
+* requests (HTTP library for API calls)
+
+---
