@@ -6,3 +6,6 @@ This project implements a serverless data pipeline using Amazon Web Services (AW
 
 ---
 
+## 🧱 Architecture
+
+API → EventBridge → Lambda (Ingestion) → DynamoDB → Lambda (Processing) → S3 → Snowpipe → Snowflake
