@@ -73,3 +73,12 @@ Use environment variables or configuration files to manage secrets securely.
 * Scalable and efficient data loading using Snowpipe
 
 ---
+
+## 🎯 Learnings
+
+* Designed and implemented a cloud-based ETL pipeline
+* Worked with core AWS services (S3, Lambda)
+* Integrated Snowflake with AWS for data ingestion
+* Built event-driven and scalable data workflows
+
+---
