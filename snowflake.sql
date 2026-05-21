@@ -41,3 +41,5 @@ file_format = (TYPE='JSON');
 ALTER PIPE my_pipe REFRESH;
 
 LIST @my_s3_stage;
+
+SELECT DATA FROM WEATHER_DATA LIMIT 2;
