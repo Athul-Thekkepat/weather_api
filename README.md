@@ -6,6 +6,3 @@ This project implements a serverless data pipeline using Amazon Web Services (AW
 
 ---
 
-## 🧱 Architecture
-
-API → AWS Lambda → AWS Lambda → Amazon S3 → Snowpipe → Snowflake
